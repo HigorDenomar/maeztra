@@ -1,3 +1,4 @@
+import { FullBanner } from './components/FullBanner'
 import { Header } from './components/Header'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
       <Header />
 
       <main>
-
+        <FullBanner />
       </main>
     </>
   )

@@ -1,0 +1,69 @@
+.container {
+  .item {
+    position: relative;
+    height: 600px;
+
+    > img {
+      position: absolute;
+      inset: 0;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15rem;
+      position: absolute;
+      z-index: 5;
+      inset: 0;
+
+      h3 {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      p {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        max-width: 29.1875rem;
+        margin-top: 2.5rem;
+      }
+
+      a {
+        padding: 0.875rem 1rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.625rem;
+        background: #faa500;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        max-width: 8rem;
+
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+
+  :global(.slick-arrow) {
+    &:global(.slick-prev) {
+      left: 5rem;
+    }
+
+    &:global(.slick-next) {
+      right: 5rem;
+    }
+  }
+}
