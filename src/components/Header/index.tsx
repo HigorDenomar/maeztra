@@ -1,13 +1,24 @@
 
+import { Menu } from '../Menu'
 import { TopBar } from './TopBar'
 
+import dressIcon from '../../assets/icons/dress.svg'
 import heartIcon from '../../assets/icons/heart.svg'
 import shoppingBagIcon from '../../assets/icons/shopping-bag.svg'
 import userIcon from '../../assets/icons/user.svg'
-
 import logoMaeztra from '../../assets/logos/maeztra.png'
 
 import styles from './styles.module.scss'
+
+const MENU_DEFAULT_ITEMS = [
+  { title: 'Novidades', href: '#', openInNewTab: false, icon: dressIcon },
+  { title: 'Vestidos', href: '#', openInNewTab: true },
+  { title: 'Roupas', href: '#', openInNewTab: false },
+  { title: 'Sapatos', href: '#', openInNewTab: false },
+  { title: 'Lingerie', href: '#', openInNewTab: false },
+  { title: 'Acessórios', href: '#', openInNewTab: false },
+  { title: 'OUTLET', href: '#', openInNewTab: false },
+]
 
 export function Header() {
   return (
@@ -46,6 +57,8 @@ export function Header() {
           </div>
         </div>
       </div>
+
+      <Menu items={MENU_DEFAULT_ITEMS} />
     </header>
   )
 }
