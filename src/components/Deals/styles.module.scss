@@ -1,0 +1,51 @@
+.container {
+  padding: 0 1rem;
+  max-width: 100rem;
+  margin: 0 auto 4.62rem;
+
+  .title {
+    color: #353535;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin: 1.4rem auto 1.3rem;
+  }
+
+  .deal {
+    padding: 0 0.5rem;
+
+    .dealContent {
+      display: flex !important;
+      align-items: center;
+      gap: 1.37rem;
+
+      background: #efefef;
+      border-radius: 0.25rem;
+      padding: 1rem 1.6rem;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+          color: #353535;
+          font-size: 0.875rem;
+          font-weight: 700;
+        }
+
+        p {
+          color: #000;
+          font-size: 0.75rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

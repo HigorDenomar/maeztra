@@ -1,3 +1,4 @@
+import { Deals } from './components/Deals'
 import { FullBanner } from './components/FullBanner'
 import { Header } from './components/Header'
 
@@ -8,6 +9,8 @@ function App() {
 
       <main>
         <FullBanner />
+
+        <Deals />
       </main>
     </>
   )
