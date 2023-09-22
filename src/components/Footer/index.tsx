@@ -5,6 +5,7 @@ import { Newsletter } from '../Newsletter';
 import { Menu } from './Menu';
 
 import maeztraLogo from '../../assets/logos/maeztra-white.png';
+import vtexLogo from '../../assets/logos/vtex.png';
 
 import styles from './styles.module.scss';
 
@@ -64,7 +65,7 @@ export function Footer() {
             <div>
               <p>Powered by</p>
 
-              VTEX
+              <img src={vtexLogo} alt="VTEX" />
             </div>
             <div>
               <p>Developed by</p>
