@@ -34,12 +34,14 @@ export function FullBanner({ images = DEFAULT_IMAGES }: FullBannerProps) {
         <div key={image.title} className={styles.item}>
           <img src={image.src} alt={image.alt} />
 
-          <div className={styles.content}>
-            {image.title ? <h3>{image.title}</h3> : null}
+          <div className={styles.wrapper}>
+            <div className={styles.content}>
+              {image.title ? <h3>{image.title}</h3> : null}
 
-            {image.description ? <p>{image.description}</p> : null}
+              {image.description ? <p>{image.description}</p> : null}
 
-            {image.href ? <a href="/">Conferir</a> : null}
+              {image.href ? <a href="/">Conferir</a> : null}
+            </div>
           </div>
         </div>
       ))}
