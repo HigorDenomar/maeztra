@@ -1,6 +1,7 @@
 import { BannerWithTexts } from './components/BannerWithTexts'
 import { Brands } from './components/Brands'
 import { Deals } from './components/Deals'
+import { Footer } from './components/Footer'
 import { FullBanner } from './components/FullBanner'
 import { Header } from './components/Header'
 import { Shelf } from './components/Shelf'
@@ -26,6 +27,8 @@ function App() {
           alt='Nova coleção de outono-inverno'
         />
       </main>
+
+      <Footer />
     </>
   )
 }
