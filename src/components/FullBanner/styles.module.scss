@@ -67,4 +67,8 @@
       right: 5rem;
     }
   }
+
+  :global(.slick-dots) {
+    bottom: 1.5rem;
+  }
 }

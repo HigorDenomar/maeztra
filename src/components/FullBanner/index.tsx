@@ -20,7 +20,7 @@ export function FullBanner({ images = DEFAULT_IMAGES }: FullBannerProps) {
   if (!images) return null
 
   const settings: Settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
