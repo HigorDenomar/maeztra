@@ -60,6 +60,16 @@ export function Shelf() {
     ],
   };
 
+
+  function formatPrice(price: number) {
+    const formatted = price.toLocaleString('pt-br', {
+      style: 'currency',
+      currency: 'BRL'
+    })
+
+    return formatted
+  }
+
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>As Mais Pedidas</h2>
@@ -81,7 +91,7 @@ export function Shelf() {
                 ))}
               </div>
 
-              <strong>{product.price}</strong>
+              <strong>{formatPrice(product.price)}</strong>
 
               <h5 className={styles.name}>
                 <a href={product.link}>
