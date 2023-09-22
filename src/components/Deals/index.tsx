@@ -2,13 +2,7 @@ import { Slider } from '../Slider'
 
 import styles from './styles.module.scss'
 
-const DEFAULT_DEALS = [
-  { title: 'Produtos importados', subtitle: 'Produto de Alta Qualidade', icon: 'https://i.imgur.com/o6jS7Gc.png' },
-  { title: 'Estoque no Brazil', subtitle: 'Produtos mais perto de você!', icon: 'https://i.imgur.com/QTFwPmU.png' },
-  { title: 'Trocas Garantidas', subtitle: 'Trocas em até 48 horas, veja as regras', icon: 'https://i.imgur.com/5GTW9ii.png' },
-  { title: 'Ganhe 4% off', subtitle: 'Pagando à vista no Cartão', icon: 'https://i.imgur.com/sxrqa57.png' },
-  { title: 'Frete Grátis', subtitle: 'Em compras acima de R$ 499,00', icon: 'https://i.imgur.com/pyNUUin.png' },
-]
+import DEFAULT_DEALS from '../../mocks/deals.json'
 
 type DealsProps = {
   deals?: {

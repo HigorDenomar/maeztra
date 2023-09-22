@@ -1,18 +1,10 @@
 import Slider, { Settings } from 'react-slick';
 
-import mainBanner from '../../assets/banner-01.png';
+// import mainBanner from '../../assets/banner-01.png';
 
 import styles from './styles.module.scss';
 
-const DEFAULT_IMAGES = [
-  { src: mainBanner, alt: '#', title: 'Promoções de Outono', description: 'Confira os melhores looks para combinar com você nesse Outono', href: '#' },
-  { src: 'https://dummyimage.com/1920x600/0ff/fff', alt: '#', title: 'Promoções de Outono', description: 'Confira os melhores looks para combinar com você nesse Outono', href: '#' },
-  { src: 'https://dummyimage.com/1920x600/00f/fff', alt: '#', title: 'Promoções de Outono', description: 'Confira os melhores looks para combinar com você nesse Outono', href: '#' },
-  { src: 'https://dummyimage.com/1920x600/f0f/fff', alt: '#', title: 'Promoções de Outono', description: 'Confira os melhores looks para combinar com você nesse Outono', href: '#' },
-  { src: 'https://dummyimage.com/1920x600/ff0/fff', alt: '#', title: 'Promoções de Outono', description: 'Confira os melhores looks para combinar com você nesse Outono', href: '#' },
-  { src: 'https://dummyimage.com/1920x600/f00/fff', alt: '#', title: 'Promoções de Outono', description: 'Confira os melhores looks para combinar com você nesse Outono', href: '#' },
-  { src: 'https://dummyimage.com/1920x600/0f0/fff', alt: '#', title: 'Promoções de Outono', description: 'Confira os melhores looks para combinar com você nesse Outono', href: '#' },
-]
+import DEFAULT_IMAGES from '../../mocks/bannerImages.json';
 
 type FullBannerProps = {
   images?: {

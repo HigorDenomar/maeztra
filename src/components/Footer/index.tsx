@@ -19,7 +19,6 @@ export function Footer() {
           <ul>
             <li>
               <a href="https://facebook.com/" target='_blank'>
-                {/* <FaFacebookSquare size={25} color='#FFF' /> */}
                 <IoLogoFacebook size={25} color='#FFF' />
               </a>
             </li>
