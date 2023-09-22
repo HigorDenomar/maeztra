@@ -4,6 +4,7 @@ import { Deals } from './components/Deals'
 import { Footer } from './components/Footer'
 import { FullBanner } from './components/FullBanner'
 import { Header } from './components/Header'
+import { Modal } from './components/Modal'
 import { Shelf } from './components/Shelf'
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
           alt='Nova coleção de outono-inverno'
         />
       </main>
+
+      <Modal />
 
       <Footer />
     </>
