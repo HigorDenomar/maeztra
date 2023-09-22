@@ -2,6 +2,7 @@ import { Brands } from './components/Brands'
 import { Deals } from './components/Deals'
 import { FullBanner } from './components/FullBanner'
 import { Header } from './components/Header'
+import { Shelf } from './components/Shelf'
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Deals />
 
         <Brands />
+
+        <Shelf />
       </main>
     </>
   )
