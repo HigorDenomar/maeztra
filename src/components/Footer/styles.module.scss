@@ -1,9 +1,7 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
   gap: 2rem;
-
-  justify-content: center;
   padding: 0 1rem;
   max-width: 59.3rem;
   margin: 2.5rem auto 4rem;
@@ -35,6 +33,36 @@
 
       &:hover {
         opacity: 0.75;
+      }
+    }
+  }
+}
+
+.copy-wrapper-container {
+  background: #353535;
+
+  .copy-wrapper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1rem;
+
+    color: #fff;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 1.3rem;
+
+      p {
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 0.625rem;
+        font-weight: 400;
+        margin-bottom: 0.15rem;
       }
     }
   }
