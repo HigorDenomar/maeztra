@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+
+  padding: 0 1rem;
+  max-width: 100rem;
+  margin: 0 auto 5rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    .title {
+      color: #000;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .description {
+      color: #000;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+
+  img {
+    grid-column: 2/4;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+}
