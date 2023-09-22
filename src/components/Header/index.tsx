@@ -2,8 +2,10 @@
 import { Menu } from '../Menu'
 import { TopBar } from './TopBar'
 
+import drawerIcon from '../../assets/icons/drawer-menu.svg'
 import dressIcon from '../../assets/icons/dress.svg'
 import heartIcon from '../../assets/icons/heart.svg'
+import searchIcon from '../../assets/icons/search.svg'
 import shoppingBagIcon from '../../assets/icons/shopping-bag.svg'
 import userIcon from '../../assets/icons/user.svg'
 import logoMaeztra from '../../assets/logos/maeztra.png'
@@ -27,9 +29,15 @@ export function Header() {
 
       <div className={styles.wrapper}>
         <div className={styles.content}>
-          <a href="/">
-            <img src={logoMaeztra} alt="Maeztra" />
-          </a>
+          <div className={styles['logo-wrapper']}>
+            <button type="button">
+              <img src={drawerIcon} alt="Menu Ícone" />
+            </button>
+
+            <a href="/">
+              <img src={logoMaeztra} alt="Maeztra" />
+            </a>
+          </div>
 
           <div className={styles['search-container']}>
             <input type="text" placeholder='O Que Você Busca?' />
@@ -38,21 +46,26 @@ export function Header() {
           </div>
 
           <div className={styles['actions-wrapper']}>
-            <a href="#">
+            <button type="button" className='search-button'>
+              <img src={searchIcon} alt="Botão de pesquisa" />
+            </button>
+
+            <a href="#" className='account-link'>
               <img src={userIcon} alt="Ícone de usuário" />
 
-              Minha Conta
+              <span>Minha Conta</span>
             </a>
-            <a href="#">
+
+            <a href="#" className='wishlist-link'>
               <img src={heartIcon} alt="Ícone de coração" />
 
-              Minha Conta
+              <span>Minha Conta</span>
             </a>
 
             <button type='button'>
               <img src={shoppingBagIcon} alt="Ícone de bolsa de compras" />
 
-              Meu Carrinho
+              <span>Meu Carrinho</span>
             </button>
           </div>
         </div>
