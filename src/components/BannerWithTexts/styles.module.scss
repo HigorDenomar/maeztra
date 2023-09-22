@@ -32,4 +32,49 @@
     height: 30rem;
     object-fit: cover;
   }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    img {
+      height: 18rem;
+    }
+  }
+
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1.94rem;
+    margin-bottom: 2.44rem;
+
+    img {
+      height: 25rem;
+    }
+
+    .content {
+      .description {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    img {
+      height: 20rem;
+    }
+  }
+
+  @media (max-width: 440px) {
+    img {
+      height: 11.5625rem;
+    }
+
+    .content {
+      .description {
+        font-size: 0.875rem;
+        max-width: 16.8125rem;
+      }
+    }
+  }
 }
