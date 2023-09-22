@@ -39,7 +39,7 @@ export function FullBanner({ images = DEFAULT_IMAGES }: FullBannerProps) {
   return (
     <Slider {...settings} className={styles.container}>
       {images?.map(image => (
-        <div className={styles.item}>
+        <div key={image.title} className={styles.item}>
           <img src={image.src} alt={image.alt} />
 
           <div className={styles.content}>
