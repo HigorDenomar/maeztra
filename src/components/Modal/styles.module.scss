@@ -70,6 +70,10 @@
         }
 
         button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
           padding: 0.63rem 0.81rem;
           border-radius: 0.625rem;
           background: #faa500;
@@ -83,6 +87,11 @@
           transition: 0.3s;
 
           cursor: pointer;
+
+          img {
+            width: 0.75rem;
+            height: 0.75rem;
+          }
 
           &:disabled {
             cursor: not-allowed;

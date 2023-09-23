@@ -2,6 +2,7 @@ import * as Dialog from '@radix-ui/react-alert-dialog';
 import { FormEvent, useState } from 'react';
 
 import mailIcon from '../../assets/icons/mail.svg';
+import sendIcon from '../../assets/icons/send.png';
 
 import styles from './styles.module.scss';
 
@@ -15,7 +16,7 @@ export function Modal() {
 
     console.log('Email enviado!')
 
-    // setModalIsOpen(false)
+    setModalIsOpen(false)
   }
 
 
@@ -53,7 +54,11 @@ export function Modal() {
                   onChange={event => setEmail(event.target.value)}
                 />
 
-                <button type="submit" disabled={!email}>Enviar</button>
+                <button type="submit" disabled={!email}>
+                  Enviar
+
+                  <img src={sendIcon} data-hidden />
+                </button>
               </form>
             </div>
           </div>
