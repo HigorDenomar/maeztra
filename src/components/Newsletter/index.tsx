@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import toast from 'react-hot-toast';
 
 import styles from './styles.module.scss';
 
@@ -7,6 +8,7 @@ export function Newsletter() {
 
   function handleToSubmit(event: FormEvent) {
     event.preventDefault()
+    toast.success('Email registrado com sucesso, confira sua caixa de entrada!')
   }
 
   return (

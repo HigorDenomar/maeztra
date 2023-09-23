@@ -1,5 +1,6 @@
 import * as Dialog from '@radix-ui/react-alert-dialog';
 import { FormEvent, useState } from 'react';
+import toast from 'react-hot-toast';
 
 import mailIcon from '../../assets/icons/mail.svg';
 import sendIcon from '../../assets/icons/send.png';
@@ -14,7 +15,7 @@ export function Modal() {
   function handleToSendEmail(event: FormEvent) {
     event.preventDefault()
 
-    console.log('Email enviado!')
+    toast.success('Email registrado com sucesso, confira sua caixa de entrada!')
 
     setModalIsOpen(false)
   }
