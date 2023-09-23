@@ -15,6 +15,10 @@
     padding: 0 0.5rem;
   }
 
+  @media (max-width: 1600px) {
+    padding: 0 0 0 1rem;
+  }
+
   @media (max-width: 720px) {
     margin-bottom: 2.44rem;
     padding: 0 1.94rem;
