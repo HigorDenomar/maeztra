@@ -1,12 +1,23 @@
 import * as Dialog from '@radix-ui/react-alert-dialog';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 
 import mailIcon from '../../assets/icons/mail.svg';
 
 import styles from './styles.module.scss';
 
 export function Modal() {
+  const [email, setEmail] = useState('')
   const [modalIsOpen, setModalIsOpen] = useState(true)
+
+
+  function handleToSendEmail(event: FormEvent) {
+    event.preventDefault()
+
+    console.log('Email enviado!')
+
+    setModalIsOpen(false)
+  }
+
 
   return (
     <Dialog.Root defaultOpen open={modalIsOpen}>
@@ -28,10 +39,15 @@ export function Modal() {
                 <span>descontos e ofertas exclusivas</span>
               </p>
 
-              <form>
-                <input type="email" placeholder='Digite seu e-mail' />
+              <form onSubmit={handleToSendEmail}>
+                <input
+                  type="email"
+                  placeholder='Digite seu e-mail'
+                  value={email}
+                  onChange={event => setEmail(event.target.value)}
+                />
 
-                <button type="submit">Enviar</button>
+                <button type="submit" disabled={!email}>Enviar</button>
               </form>
             </div>
           </div>

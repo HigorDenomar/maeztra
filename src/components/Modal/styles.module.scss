@@ -80,6 +80,17 @@
           font-weight: 700;
           line-height: 1.25rem;
           text-transform: uppercase;
+          transition: 0.3s;
+
+          cursor: pointer;
+
+          &:disabled {
+            cursor: not-allowed;
+          }
+
+          &:not(:disabled):hover {
+            opacity: 0.75;
+          }
         }
       }
     }
