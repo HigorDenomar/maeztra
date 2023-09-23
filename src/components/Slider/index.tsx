@@ -10,8 +10,6 @@ export function Slider(props: SliderProps) {
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
-    variableWidth: true,
-    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1600,
@@ -19,7 +17,6 @@ export function Slider(props: SliderProps) {
           slidesToShow: 4,
           slidesToScroll: 4,
           centerMode: true,
-          centerPadding: '15px',
         }
       },
       {
@@ -28,7 +25,6 @@ export function Slider(props: SliderProps) {
           slidesToShow: 3,
           slidesToScroll: 3,
           centerMode: true,
-          centerPadding: '15px',
         }
       },
       {
@@ -37,7 +33,6 @@ export function Slider(props: SliderProps) {
           slidesToShow: 2,
           slidesToScroll: 2,
           centerMode: true,
-          centerPadding: '15px',
         }
       },
       {
@@ -46,7 +41,6 @@ export function Slider(props: SliderProps) {
           slidesToShow: 2,
           slidesToScroll: 2,
           centerMode: true,
-          centerPadding: '15px',
         }
       },
       {
@@ -55,7 +49,6 @@ export function Slider(props: SliderProps) {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '50px',
         }
       }
     ],
