@@ -11,7 +11,6 @@ export function Modal() {
   const [email, setEmail] = useState('')
   const [modalIsOpen, setModalIsOpen] = useState(true)
 
-
   function handleToSendEmail(event: FormEvent) {
     event.preventDefault()
 
@@ -19,7 +18,6 @@ export function Modal() {
 
     setModalIsOpen(false)
   }
-
 
   return (
     <Dialog.Root

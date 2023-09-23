@@ -1,8 +1,7 @@
 
-import { Menu } from '../Menu'
+import Menu from '../Menu'
 import { TopBar } from './TopBar'
 
-import drawerIcon from '../../assets/icons/drawer-menu.svg'
 import dressIcon from '../../assets/icons/dress.svg'
 import heartIcon from '../../assets/icons/heart.svg'
 import searchIcon from '../../assets/icons/search.svg'
@@ -30,9 +29,7 @@ export function Header() {
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <div className={styles['logo-wrapper']}>
-            <button type="button">
-              <img src={drawerIcon} alt="Menu Ícone" />
-            </button>
+            <Menu.Mobile items={MENU_DEFAULT_ITEMS} />
 
             <a href="/">
               <img src={logoMaeztra} alt="Maeztra" />
@@ -71,7 +68,7 @@ export function Header() {
         </div>
       </div>
 
-      <Menu items={MENU_DEFAULT_ITEMS} />
+      <Menu.Desktop items={MENU_DEFAULT_ITEMS} />
     </header>
   )
 }
