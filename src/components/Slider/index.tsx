@@ -10,6 +10,8 @@ export function Slider(props: SliderProps) {
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
+    variableWidth: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1600,
@@ -53,7 +55,7 @@ export function Slider(props: SliderProps) {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '15px',
+          centerPadding: '50px',
         }
       }
     ],
