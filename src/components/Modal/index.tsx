@@ -15,14 +15,20 @@ export function Modal() {
 
     console.log('Email enviado!')
 
-    setModalIsOpen(false)
+    // setModalIsOpen(false)
   }
 
 
   return (
-    <Dialog.Root defaultOpen open={modalIsOpen}>
+    <Dialog.Root
+      open={modalIsOpen}
+      onOpenChange={setModalIsOpen}
+    >
       <Dialog.Portal >
-        <Dialog.Overlay className={styles.alertDialog_Overlay} onClick={() => setModalIsOpen(false)} />
+        <Dialog.Overlay
+          className={styles.alertDialog_Overlay}
+          onClick={() => setModalIsOpen(false)}
+        />
 
         <Dialog.Content className={styles.alertDialog_Content}>
           <img src="/maeztra/images/banner-newsletter.png" aria-hidden />
@@ -51,6 +57,10 @@ export function Modal() {
               </form>
             </div>
           </div>
+
+          <Dialog.Cancel asChild>
+            <button className={styles.closeButton}>Fechar</button>
+          </Dialog.Cancel>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
